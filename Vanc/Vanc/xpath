@@ -1,0 +1,11 @@
+item -> response.xpath('//div[@class="css-zjik7"]').getall()
+	tipologia -> response.xpath('//div[@class="css-zjik7"]//div[@class="css-1jwryq8"]').getall()
+	preco -> response.xpath('//div[@class="css-zjik7"]//div[@class="css-11mm0h3"]/text()').getall()
+	wc -> response.xpath('//div[@class="css-zjik7"]//div[@class="css-1ukfvem"]/span/text()').getall()
+	area -> response.xpath('//div[@class="css-zjik7"]//div[@class="css-13koqug"]/span/text()').getall()
+address -> response.xpath('//h1[@class="Header_headerText__39zS4"]/span/text()').get()
+listing name -> response.xpath('//h1[@class="Header_headerText__39zS4"]/text()').get()
+descricao -> response.xpath('//div[@class="css-voxcx"]/text()').get()
+bairro -> response.xpath('//div[@class="Header_subHeader__Am2F2"]/p/text()').getall()[2]
+ano de construcao -> response.xpath('//div[@class="css-8jkrjq"]//dd/text()').get()
+
