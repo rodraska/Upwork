@@ -1,0 +1,4 @@
+names -> response.xpath('//div[@class="container max1296 stateList"]//li/a/text()').getall()
+address -> a=response.xpath('//div[@class="container max1296 stateList"]//li/p[@class="billing_street"]/text()').getall()
+city, zipcode -> response.xpath('//div[@class="container max1296 stateList"]//li/p[2]/text()').getall()
+states -> response.xpath('//div[@class="container max1296 stateList"]/h3/text()').getall()
