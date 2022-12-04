@@ -12,6 +12,8 @@ BOT_NAME = 'koa'
 SPIDER_MODULES = ['koa.spiders']
 NEWSPIDER_MODULE = 'koa.spiders'
 
+FEED_EXPORT_FIELDS=['name','address','city', 'state', 'zip', 'lat', 'lng']
+
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'koa (+http://www.yourdomain.com)'

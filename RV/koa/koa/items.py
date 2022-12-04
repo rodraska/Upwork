@@ -11,5 +11,7 @@ class KoaParks(scrapy.Item):
     state = scrapy.Field()
     city = scrapy.Field()
     zip = scrapy.Field()
+    lat = scrapy.Field()
+    lng = scrapy.Field()
     
 

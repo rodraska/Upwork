@@ -27,3 +27,10 @@ camp_info = response.css('div.col-xs-11.col-sm-10.col-lg-7')
 camp_name = camp_info.css('h2.mt-0.font-size-h1::text').get()
 camp_address = camp_info.css('b::text')[3].get()
 camp_ziptotal = camp_info.css('b::text')[4].get()
+
+
+
+https://koa.com/campgrounds/brookeland/
+
+bread = response.css('li.breadcrumb-item')[2]
+state = bread.css('a::text')[:-12].get()
