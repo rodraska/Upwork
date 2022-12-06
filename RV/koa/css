@@ -1,0 +1,36 @@
+https://koa.com/campgrounds/
+
+states_odd = response.css('li.odd')
+states_even = response.css('li.even')
+
+all_states = states_odd + states_even
+
+states_links = []
+for state in all_states:
+    states_links.append(state.css('a::attr(href)')[0].get())
+
+
+https://koa.com/states-provinces/alabama/
+
+state_plus = response.xpath('//span[@class="title"]/text()').get()
+state = state_plus[19:]
+
+state_camps = response.css('div.col-xs-6.col-sm-6.col-md-6.col-lg-4.margin-bottom-15.campground-listing-container')
+
+camps_links = state_camps.css('a.btn.btn-red.text-upper.state-reserve::attr(href)').getall()
+
+
+https://koa.com/campgrounds/decatur/
+
+camp_info = response.css('div.col-xs-11.col-sm-10.col-lg-7')
+
+camp_name = camp_info.css('h2.mt-0.font-size-h1::text').get()
+camp_address = camp_info.css('b::text')[3].get()
+camp_ziptotal = camp_info.css('b::text')[4].get()
+
+
+
+https://koa.com/campgrounds/brookeland/
+
+bread = response.css('li.breadcrumb-item')[2]
+state = bread.css('a::text')[:-12].get()
