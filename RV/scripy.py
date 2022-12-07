@@ -1,12 +1,19 @@
 import pandas as pd
 
-df = pd.read_csv("coordinates.csv")
+coords = pd.read_csv("coordinates.csv")
 
 def give_coord(zip):
+    return (coords[coords.ZIP == zip].LAT.item(), coords[coords.ZIP == zip].LNG.item())
 
-    lat = df[df.ZIP == zip].LAT.item()
-    print(type(lat))
-    lng = df[df.ZIP == zip].LNG.item()
-    return (lat, lng)
+data = pd.read_csv('CA_sel/CruiseAmerica.csv')
 
-print(give_coord(30075))
+
+coordinates = []
+for i in range(len(data.name)):
+    try:
+        coordinates.append(give_coord((data.zipcode.iloc[i])))
+    except ValueError:
+        coordinates.append(('none', 'none'))
+
+data = data.join(pd.DataFrame(coordinates, columns=['Lat', 'Lng']))
+data.to_csv('deliver/CruiseAmerica.csv', index=False)

@@ -1,12 +1,55 @@
 import scrapy
 from CampingWorld.items import CampingworldItem
 import re
+import pandas as pd
 
 
 class CwSpider(scrapy.Spider):
     name = 'CW'
     allowed_domains = ['rv.campingworld.com']
     start_urls = ['https://rv.campingworld.com/state-directory']
+    states_dict = {'AL': 'ALABAMA',
+                'AZ': 'ARIZONA', 
+                'AR': 'ARKANSAS', 
+                'CA': 'CALIFORNIA', 
+                'CO': 'COLORADO', 
+                'FL': 'FLORIDA', 
+                'GA': 'GEORGIA', 
+                'ID': 'IDAHO', 
+                'IL': 'ILLINOIS', 
+                'IN': 'INDIANA', 
+                'IA': 'IOWA', 
+                'KS': 'KANSAS', 
+                'KY': 'KENTUCKY', 
+                'LA': 'LOUISIANA', 
+                'ME': 'MAINE', 
+                'MA': 'MASSACHUSETTS', 
+                'MI': 'MICHIGAN', 
+                'MN': 'MINNESOTA', 
+                'MS': 'MISSISSIPPI', 
+                'MO': 'MISSOURI', 
+                'NE': 'NEBRASKA', 
+                'NV': 'NEVADA', 
+                'NH': 'NEW HAMPSHIRE', 
+                'NJ': 'NEW JERSEY', 
+                'NM': 'NEW MEXICO', 
+                'NY': 'NEW YORK', 
+                'NC': 'NORTH CAROLINA', 
+                'ND': 'NORTH DAKOTA', 
+                'OH': 'OHIO', 
+                'OK': 'OKLAHOMA', 
+                'OR': 'OREGON', 
+                'PA': 'PENNSYLVANIA', 
+                'SC': 'SOUTH CAROLINA', 
+                'SD': 'SOUTH DAKOTA', 
+                'TN': 'TENNESSEE', 
+                'TX': 'TEXAS', 
+                'UT': 'UTAH', 
+                'VA': 'VIRGINIA', 
+                'WA': 'WASHINGTON', 
+                'WV': 'WEST VIRGINIA', 
+                'WI': 'WISCONSIN', 
+                'WY': 'WYOMING'}
 
     def separate_city_zipcode(self, cities_zipcodes):
         cities = []
@@ -32,12 +75,10 @@ class CwSpider(scrapy.Spider):
         addresses  = response.xpath('//div[@class="container max1296 stateList"]//li/p[@class="billing_street"]/text()').getall()
         states = response.xpath('//div[@class="container max1296 stateList"]/h3/text()').getall()
         cities, zipcodes, states_small = self.separate_city_zipcode(response.xpath('//div[@class="container max1296 stateList"]//li/p[2]/text()').getall())
-        states_dict = self.creat_states_dict(states, states_small)
-        print(sorted(list(set(states_small))))
         for name, address, state_small, city, zipcode in zip(names, addresses, states_small, cities, zipcodes):
             item['name'] = name
             item['address'] = address
-            item['state'] = states_dict[state_small]
+            item['state'] = self.states_dict[state_small]
             item['city'] = city
             item['zipcode'] = zipcode
             yield item

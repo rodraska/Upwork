@@ -3,13 +3,13 @@ address,city,name,state,zipcode
 2961 ross clark cir ste 2,Dothan,Camping World of Dothan,ALABAMA,36301
 2772 us highway 78 e ste 1,Anniston,Camping World of Oxford,ALABAMA,36207
 21282 state highway 59 s,Robertsdale,Camping World of Robertsdale,ALABAMA,36567
-10255 w. papago freeway,Avondale,Camping World of Avondale,ARKANSAS,85323
-2222 e main st,Mesa,Camping World of Mesa,ARKANSAS,85213
-44019 n. black canyon hwy,New River,Camping World of New River,ARKANSAS,85087
-4700 s. palo verde rd,Tucson,Camping World of Tucson,ARKANSAS,85714
-9801 diamond drive,North Little Rock,Camping World of Little Rock,ARIZONA,72117
-317 n 6th place,Lowell,Camping World of Lowell,ARIZONA,72745
-6721 warden road,Sherwood,RVs.com Showroom North Little Rock,ARIZONA,72120
+10255 w. papago freeway,Avondale,Camping World of Avondale,ARIZONA,85323
+2222 e main st,Mesa,Camping World of Mesa,ARIZONA,85213
+44019 n. black canyon hwy,New River,Camping World of New River,ARIZONA,85087
+4700 s. palo verde rd,Tucson,Camping World of Tucson,ARIZONA,85714
+9801 diamond drive,North Little Rock,Camping World of Little Rock,ARKANSAS,72117
+317 n 6th place,Lowell,Camping World of Lowell,ARKANSAS,72745
+6721 warden road,Sherwood,RVs.com Showroom North Little Rock,ARKANSAS,72120
 5500 wible road,Bakersfield,Camping World of Bakersfield,CALIFORNIA,93313
 1175 south mount vernon avenue,Colton,Camping World of Colton,CALIFORNIA,92324
 3672 south maple ave.,Fresno,Camping World of Fresno,CALIFORNIA,93725
@@ -49,24 +49,24 @@ address,city,name,state,zipcode
 129 continental blvd,Pooler,RVs.com Showroom Savannah,GEORGIA,31322
 5244 jewell futch rd.,Lake Park,Camping World of Valdosta,GEORGIA,31636
 505 parkway 575,Woodstock,Camping World of Woodstock,GEORGIA,30188
-5309 w chinden blvd,Garden City,RVs.com Showroom Boise,ILLINOIS,83714
-5500 cleveland blvd,Caldwell,Camping World of Caldwell,ILLINOIS,83607
-1355 tara st,Idaho Falls,Camping World of Idaho Falls,ILLINOIS,83402
-1580 w overland rd,Meridian,Camping World of Meridian,ILLINOIS,83642
-3385 hawthorne rd,Pocatello,Camping World of Pocatello,ILLINOIS,83201
-41517 us hwy 45,Antioch,Gander RV Service Center of Antioch,INDIANA,60002
-800 ez street,Braidwood,Camping World of Braidwood,INDIANA,60408
-27794 n darrell rd,Wauconda,Camping World of Chicago,INDIANA,60084
-350 west lincoln highway,Cortland,Camping World of DeKalb,INDIANA,60112
-2480 blue heron drive,Marion,Camping World of Marion,INDIANA,62959
-6135 all world way,Roscoe,Camping World of Rockford,INDIANA,61073
-2371 chuckwagon drive,Springfield,Camping World of Springfield,INDIANA,62711
-303 sheek road,Greenwood,Camping World of Indianapolis,IOWA,46143
-503 north main street,Middlebury,RVs.com Showroom Middlebury,IOWA,46540
-2250 williamsburg pike,Richmond,Camping World of Richmond,IOWA,47374
-7805 ace place,Cedar Falls,Camping World of Cedar Falls,IDAHO,50613
-2802 south 21st street,Council Bluffs,Camping World of Council Bluffs,IDAHO,51501
-14040 110th ave.,Davenport,Camping World of Davenport,IDAHO,52804
+5309 w chinden blvd,Garden City,RVs.com Showroom Boise,IDAHO,83714
+5500 cleveland blvd,Caldwell,Camping World of Caldwell,IDAHO,83607
+1355 tara st,Idaho Falls,Camping World of Idaho Falls,IDAHO,83402
+1580 w overland rd,Meridian,Camping World of Meridian,IDAHO,83642
+3385 hawthorne rd,Pocatello,Camping World of Pocatello,IDAHO,83201
+41517 us hwy 45,Antioch,Gander RV Service Center of Antioch,ILLINOIS,60002
+800 ez street,Braidwood,Camping World of Braidwood,ILLINOIS,60408
+27794 n darrell rd,Wauconda,Camping World of Chicago,ILLINOIS,60084
+350 west lincoln highway,Cortland,Camping World of DeKalb,ILLINOIS,60112
+2480 blue heron drive,Marion,Camping World of Marion,ILLINOIS,62959
+6135 all world way,Roscoe,Camping World of Rockford,ILLINOIS,61073
+2371 chuckwagon drive,Springfield,Camping World of Springfield,ILLINOIS,62711
+303 sheek road,Greenwood,Camping World of Indianapolis,INDIANA,46143
+503 north main street,Middlebury,RVs.com Showroom Middlebury,INDIANA,46540
+2250 williamsburg pike,Richmond,Camping World of Richmond,INDIANA,47374
+7805 ace place,Cedar Falls,Camping World of Cedar Falls,IOWA,50613
+2802 south 21st street,Council Bluffs,Camping World of Council Bluffs,IOWA,51501
+14040 110th ave.,Davenport,Camping World of Davenport,IOWA,52804
 1201 north 98th street,Kansas City,Camping World of The Legends,KANSAS,66111
 3928 s oak st,Wichita,Camping World of Wichita,KANSAS,67217
 725 bluegrass farms blvd,Bowling Green,Camping World of Bowling Green,KENTUCKY,42104
@@ -75,11 +75,11 @@ address,city,name,state,zipcode
 2310 n. frontage road,Breaux Bridge,Camping World of Breaux Bridge,LOUISIANA,70517
 43135 pumpkin center rd,Hammond,Camping World of Hammond,LOUISIANA,70403
 3625 industrial drive at i-20,Bossier City,Camping World of Shreveport,LOUISIANA,71112
-480 roosevelt  trail,Windham,Camping World of Windham,MASSACHUSETTS,04062
-137 myricks st.,Berkley,Camping World of Berkley,MAINE,02779
-865 quaker hwy,Uxbridge,Camping World of Uxbridge,MAINE,01569
-66 w boylston st,West Boylston,Camping World of West Boylston,MAINE,01583
-188 west street route 5,West Hatfield,Camping World of West Hatfield,MAINE,01088
+480 roosevelt  trail,Windham,Camping World of Windham,MAINE,04062
+137 myricks st.,Berkley,Camping World of Berkley,MASSACHUSETTS,02779
+865 quaker hwy,Uxbridge,Camping World of Uxbridge,MASSACHUSETTS,01569
+66 w boylston st,West Boylston,Camping World of West Boylston,MASSACHUSETTS,01583
+188 west street route 5,West Hatfield,Camping World of West Hatfield,MASSACHUSETTS,01088
 1603 s. main street,Chelsea,Camping World of Ann Arbor,MICHIGAN,48118
 11600 n beyer rd,Birch Run,Camping World of Birch Run,MICHIGAN,48415
 373 n willowbrook road ste y,Coldwater,Camping World of Coldwater,MICHIGAN,49036
@@ -97,37 +97,37 @@ address,city,name,state,zipcode
 3801 chelsea rd w,Monticello,Camping World of Minneapolis,MINNESOTA,55362
 3627 n county road 45,Owatonna,Camping World of Owatonna,MINNESOTA,55060
 1260 lake shady avenue s,Oronoco,Camping World of Rochester,MINNESOTA,55960
-12020 shriners blvd,Biloxi,Camping World of Biloxi,MISSOURI,39532
-4601 i-55 south frontage road,Jackson,Camping World of Jackson Mississippi,MISSOURI,39212
-8150 new craft rd,Olive Branch,Camping World of Memphis,MISSOURI,38654
-8877 interstate 70 dr ne,Columbia,Camping World of Columbia,MISSISSIPPI,65202
-3001 ne jefferson rd,Grain Valley,Camping World of Kansas City,MISSISSIPPI,64029
-373 e evergreen rd,Strafford,Camping World of Springfield,MISSISSIPPI,65757
-2200 e pitman ave,Wentzville,Camping World of St Louis,MISSISSIPPI,63385
-6340 arbor road,Lincoln,Camping World of Lincoln,NEW HAMPSHIRE,68501
-1600 south boulder hwy,Henderson,Camping World of Henderson,NORTH CAROLINA,89015
-13175 s las vegas blvd,Las Vegas,Camping World of Las Vegas,NORTH CAROLINA,89044
-9125 s. virginia street,Reno,Camping World of Reno,NORTH CAROLINA,89511
-1571 east main street,Center Conway,Camping World of Conway,NEW JERSEY,03813
-165 dover rd.,Chichester,Camping World of New Hampshire,NEW JERSEY,03258
-602 heron dr,Swedesboro,Camping World of Bridgeport,NEW MEXICO,08085
-1359 river ave,Lakewood,Camping World of New Jersey,NEW MEXICO,08701
-14303 central ave nw,Albuquerque,Camping World of Albuquerque,NEW YORK,87121
-12634 route 9 w,West Coxsackie,Camping World of Albany,NORTH DAKOTA,12192
-5533 camp rd,Hamburg,Camping World of Buffalo,NORTH DAKOTA,14075
-1000 sanford road north,Churchville,Camping World of Churchville,NORTH DAKOTA,14428
-5864 carmenica dr,Cicero,RVs.com Showroom Cicero,NORTH DAKOTA,13039
-124 state route 28,Kingston,Camping World of Kingston,NORTH DAKOTA,12401
-7030 interstate island rd.,Syracuse,Camping World of Syracuse,NORTH DAKOTA,13209
-2918 n rugby rd,Hendersonville,Camping World of Asheville,NEBRASKA,28791
-8615 triad drive,Colfax,Camping World of Colfax,NEBRASKA,27235
-6700 bruton smith blvd,Concord,Camping World of Concord,NEBRASKA,28027
-5117 us highway 301 s,Hope Mills,Camping World of Fayetteville,NEBRASKA,28348
-111 red banks rd,Greenville,Camping World of Greenville,NEBRASKA,27858
-1885 us 70 w,Marion,Camping World of Marion,NEBRASKA,28752
-2300 u.s. hwy. 70 e.,Garner,Camping World of Raleigh,NEBRASKA,27529
-1220 morland dr,Statesville,Gander RV of Statesville,NEBRASKA,28677
-2249 main avenue east,West Fargo,Camping World of Fargo,NEVADA,58078
+12020 shriners blvd,Biloxi,Camping World of Biloxi,MISSISSIPPI,39532
+4601 i-55 south frontage road,Jackson,Camping World of Jackson Mississippi,MISSISSIPPI,39212
+8150 new craft rd,Olive Branch,Camping World of Memphis,MISSISSIPPI,38654
+8877 interstate 70 dr ne,Columbia,Camping World of Columbia,MISSOURI,65202
+3001 ne jefferson rd,Grain Valley,Camping World of Kansas City,MISSOURI,64029
+373 e evergreen rd,Strafford,Camping World of Springfield,MISSOURI,65757
+2200 e pitman ave,Wentzville,Camping World of St Louis,MISSOURI,63385
+6340 arbor road,Lincoln,Camping World of Lincoln,NEBRASKA,68501
+1600 south boulder hwy,Henderson,Camping World of Henderson,NEVADA,89015
+13175 s las vegas blvd,Las Vegas,Camping World of Las Vegas,NEVADA,89044
+9125 s. virginia street,Reno,Camping World of Reno,NEVADA,89511
+1571 east main street,Center Conway,Camping World of Conway,NEW HAMPSHIRE,03813
+165 dover rd.,Chichester,Camping World of New Hampshire,NEW HAMPSHIRE,03258
+602 heron dr,Swedesboro,Camping World of Bridgeport,NEW JERSEY,08085
+1359 river ave,Lakewood,Camping World of New Jersey,NEW JERSEY,08701
+14303 central ave nw,Albuquerque,Camping World of Albuquerque,NEW MEXICO,87121
+12634 route 9 w,West Coxsackie,Camping World of Albany,NEW YORK,12192
+5533 camp rd,Hamburg,Camping World of Buffalo,NEW YORK,14075
+1000 sanford road north,Churchville,Camping World of Churchville,NEW YORK,14428
+5864 carmenica dr,Cicero,RVs.com Showroom Cicero,NEW YORK,13039
+124 state route 28,Kingston,Camping World of Kingston,NEW YORK,12401
+7030 interstate island rd.,Syracuse,Camping World of Syracuse,NEW YORK,13209
+2918 n rugby rd,Hendersonville,Camping World of Asheville,NORTH CAROLINA,28791
+8615 triad drive,Colfax,Camping World of Colfax,NORTH CAROLINA,27235
+6700 bruton smith blvd,Concord,Camping World of Concord,NORTH CAROLINA,28027
+5117 us highway 301 s,Hope Mills,Camping World of Fayetteville,NORTH CAROLINA,28348
+111 red banks rd,Greenville,Camping World of Greenville,NORTH CAROLINA,27858
+1885 us 70 w,Marion,Camping World of Marion,NORTH CAROLINA,28752
+2300 u.s. hwy. 70 e.,Garner,Camping World of Raleigh,NORTH CAROLINA,27529
+1220 morland dr,Statesville,Gander RV of Statesville,NORTH CAROLINA,28677
+2249 main avenue east,West Fargo,Camping World of Fargo,NORTH DAKOTA,58078
 1005 interstate pkwy,Akron,Camping World of Akron,OHIO,44312
 8001 old troy pike,Huber Heights,Camping World of Huber Heights,OHIO,45424
 8793 n county road 25a,Piqua,Camping World of Piqua,OHIO,45356
@@ -189,10 +189,10 @@ address,city,name,state,zipcode
 9420 sandifur pkwy,Pasco,Camping World of Pasco,WASHINGTON,99301
 16625 meridian e,Puyallup,RVs.com Showroom Puyallup,WASHINGTON,98375
 19651 e cataldo ave,Liberty Lake,Camping World of Spokane,WASHINGTON,99016
-2386 white hall blvd,Fairmont,Camping World of Fairmont,WISCONSIN,26544
-6440 scully drive,Eau Claire,Camping World of Eau Claire,WEST VIRGINIA,54701
-6802 118th ave,Kenosha,Camping World of Kenosha,WEST VIRGINIA,53142
-6199 east metro drive,Deforest,Camping World of Madison,WEST VIRGINIA,53532
-800 e green bay ave,Saukville,Camping World of Milwaukee,WEST VIRGINIA,53080
-1560 county road xx,Rothschild,Camping World of Rothschild,WEST VIRGINIA,54474
+2386 white hall blvd,Fairmont,Camping World of Fairmont,WEST VIRGINIA,26544
+6440 scully drive,Eau Claire,Camping World of Eau Claire,WISCONSIN,54701
+6802 118th ave,Kenosha,Camping World of Kenosha,WISCONSIN,53142
+6199 east metro drive,Deforest,Camping World of Madison,WISCONSIN,53532
+800 e green bay ave,Saukville,Camping World of Milwaukee,WISCONSIN,53080
+1560 county road xx,Rothschild,Camping World of Rothschild,WISCONSIN,54474
 8910 hutchins drive,Cheyenne,Camping World of Cheyenne,WYOMING,82007
