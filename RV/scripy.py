@@ -17,3 +17,5 @@ for i in range(len(data.name)):
 
 data = data.join(pd.DataFrame(coordinates, columns=['Lat', 'Lng']))
 data.to_csv('deliver/CruiseAmerica.csv', index=False)
+
+/nfs/homes/mvenanci/bin:/nfs/homes/mvenanci/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/nfs/homes/mvenanci/.local/bin
