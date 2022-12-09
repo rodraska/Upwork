@@ -1,0 +1,31 @@
+https://rvtool.com/
+
+select = response.css('select.field.block.mr1')
+states = select.css('option::text').getall()
+states[30].replace(' ', '-')
+
+
+https://rvtool.com/Alabama/
+
+pagination = response.css('ul.pagination')
+pages = pagination.css('a::attr(href)').getall()[1:-1]
+
+items = response.css('div.listing-list__item__label.flex-auto')
+links = items.css('a::attr(href)').getall()
+
+
+https://rvtool.com/Alabama/81-RV-Service-5866701
+
+name = response.css('h1[itemprop="name"]::text').get()
+bloco = response.css('td.valign-middle')
+address = bloco.css('span[itemprop="streetAddress"]::text').get()
+city = bloco.css('span[itemprop="addressLocality"]::text').get()
+st = bloco.css('span[itemprop="addressRegion"]::text').get()
+zip = bloco.css('span[itemprop="postalCode"]::text').get()
+
+
+
+
+
+
+
