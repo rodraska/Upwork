@@ -33,6 +33,7 @@ with open('rvt.html', 'r') as html_file:
     dealers_zip = []
     dealers_lat = []
     dealers_lng = []
+    dealers_site = []
 
     for string in address_list:
         dados = string.split(', ')
@@ -71,6 +72,7 @@ with open('rvt.html', 'r') as html_file:
         dealers_city.append(loc[0])
         dealers_state.append(loc[1])
         dealers_phone.append(info[2].text)
+        #dealers_site.append('RVT')
 
     data = {
         'name': dealers_name,
@@ -79,7 +81,8 @@ with open('rvt.html', 'r') as html_file:
         'state': dealers_state,
         'zip': dealers_zip,
         'lat': dealers_lat,
-        'lng': dealers_lng
+        'lng': dealers_lng,
+        #'site' 
     }
 
     frame = pd.DataFrame(data)

@@ -18,7 +18,7 @@ class SpidertoolSpider(scrapy.Spider):
         item = RVDealer()
         item['name'] = response.css('h1[itemprop="name"]::text').get()
         bloco = response.css('td.valign-middle')
-        item['address'] = bloco.css('span[itemprop="streetAddress"]::text').get()
+        item['address'] = bloco.css('span[itemprop="streetAddress"]::text').get()[:-1]
         item['city'] = bloco.css('span[itemprop="addressLocality"]::text').get()
         st = bloco.css('span[itemprop="addressRegion"]::text').get()
         item['state'] = response.css('span[itemprop="name"]::text').get()[:-11]
@@ -33,17 +33,29 @@ class SpidertoolSpider(scrapy.Spider):
         for link in links:
             yield scrapy.Request(url='http://rvtool.com/' + link, callback=self.parse_dealer)
 
-
     def parse_states(self, response):
         pagination = response.css('ul.pagination')
-        pages = pagination.css('a::attr(href)').getall()[1:-1]
-        all_state_links = []
-        all_state_links.append(response.url)
-        #state = response.url[19:-1]
-        for page in pages:
-            all_state_links.append('http://rvtool.com' + page)
-        for link in all_state_links:
-            yield scrapy.Request(url=link, callback=self.parse_pages)
+        if len(pagination) == 0:
+            items = response.css('div.listing-list__item__label.flex-auto')
+            links = items.css('a::attr(href)').getall()
+            for link in links:
+                yield scrapy.Request(url='http://rvtool.com/' + link, callback=self.parse_dealer)
+            # link = response.url
+            # yield scrapy.Request(url=link, callback=self.parse_pages)
+        else:
+            if response.url == 'https://rvtool.com/California/?page=15':
+                pages = pagination.css('a::attr(href)').getall()[1:-1]
+            elif response.url == 'https://rvtool.com/California/?page=24':
+                pages = pagination.css('a::attr(href)').getall()[1:]
+            if response.url == 'https://rvtool.com/Texas/?page=20':
+                pages = pagination.css('a::attr(href)').getall()[1:]
+            else:
+                pages = pagination.css('a::attr(href)').getall()[:-1]
+            all_state_links = []
+            for page in pages:
+                all_state_links.append('http://rvtool.com' + page)
+            for link in all_state_links:
+                yield scrapy.Request(url=link, callback=self.parse_pages)
         
 
     def parse(self, response):
@@ -52,5 +64,8 @@ class SpidertoolSpider(scrapy.Spider):
         states = []
         for state in states_no:
             states.append(state.replace(' ', '-'))
+        states.append('California/?page=15')
+        states.append('California/?page=24')
+        states.append('Texas/?page=20')
         for state in states:
             yield scrapy.Request(url='http://rvtool.com/' + state, callback=self.parse_states)
